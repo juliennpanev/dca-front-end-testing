@@ -1,0 +1,326 @@
+@import url('./responsive.css');
+
+:root{
+    --logo-font: 'Comfortaa', cursive;
+    --logo-2-font: 'Dubai Regular';
+    --basic-font:  'Arial';
+    --card-bg: #66717E;
+    --card-primary: #22133F;
+    --card-secondary: #BECADD;
+}
+p, li, h1, h2, h3, h4, a, button{
+    font-family: var(--basic-font) !important;
+}
+.logo{
+    width: 40px;
+}
+.navbar{
+    box-shadow: 0 .2rem .7rem rgba(0,0,0,.25)!important;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.navbar-brand span{
+    color: black;
+    font-family: var(--logo-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    user-select: none;
+}
+.nav-link{
+    color: black !important;
+    font-family: var(--basic-font);
+    border-right: 1px solid black;
+}
+.nav-menu{
+    border-right: 0 !important;
+    
+}
+.nav-active{
+    border-bottom: 2px solid var(--card-primary);
+}
+.dropdown-menu{
+    --bs-dropdown-min-width: 8rem !important;
+    box-shadow: 0 .2rem .7rem rgba(0,0,0,.25)!important;
+    padding: 20px !important;
+    --bs-dropdown-border-radius: 1rem !important;
+}
+.dropdown-menu a{
+    color: black;
+    text-decoration: none;
+}
+.dropdown-menu a:hover{
+    color: black;
+}
+.dropdown-menu-end[data-bs-popper]{
+    right: 50px !important;
+}
+.navbar button.connect{
+    background-color: #C9D6EA;
+    font-weight: 600;
+    border-radius: 13px;
+    border: none;
+    height: 42px;
+    color: #4A5759 !important;
+}
+.content{
+    margin-top: 80px;
+    /* border: 1px solid black; */
+    padding: 0px 20px;
+}
+.left-box{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0 .2rem .7rem rgba(0,0,0,.25)!important;
+    border: 1px solid rgba(0, 0, 0, .5);
+    font-weight: 500;
+
+}
+.main-card{
+    height: 430px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    position: relative;
+    padding: 10px;
+    background-color: var(--card-bg);
+}
+.genesis-logo{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.genesis-logo img{
+    width: 30px;
+    margin-right: 10px;
+}
+.genesis-logo h2{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--logo-2-font) !important;
+    color: var(--card-secondary);
+}
+.main-card-content{
+    border-top: 2px solid var(--card-primary);
+    border-bottom: 2px solid var(--card-primary);
+    position: relative;
+    height: 250px;
+    width: 100%;
+}
+.links p{
+    color: var(--card-secondary);
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+}
+
+.link-item{
+    /* border: 1px solid white; */
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    height: 30px !important;
+}
+.active{
+    border-top: 4px solid var(--card-primary);
+}
+.link-items{
+    /* border: 1px solid white; */
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    height: 30px !important;
+}
+.actives{
+    border-top: 4px solid var(--card-primary);
+}
+.link-itemss{
+    /* border: 1px solid white; */
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    height: 30px !important;
+}
+.activess{
+    border-top: 4px solid var(--card-primary);
+}
+.deposit-content{
+    display: none;
+}
+.deposit{
+    display: inline;
+}
+.item{
+    margin-top: 40px;
+    height: 50px;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* border: 1px solid white; */
+}
+.item img{
+    width: 40px;
+    height: 40px;
+}
+.item h4{
+    color: var(--card-secondary);
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.item p{
+    color: var(--card-secondary);
+    font-size: 12px;
+    padding-top: 5px;
+}
+.price{
+    padding: 10px;
+    background-color: white;
+    width: 55%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+.max{
+    font-size: 10px;
+    border: 1px solid var(--card-secondary);
+    padding-left: 6px;
+    padding-right: 6px;
+    /* opacity: .5; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+.price p{
+    font-weight: 600;
+    color: black;
+    font-size: 16px;
+}
+.price span{
+    font-size: 10px;
+    color: var(--card-secondary);
+}
+.activate-btn{
+    padding: 0 30px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+.activate-btn button{
+    width: 100% !important;
+    background-color: var(--card-primary);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+.activate-btn button:hover, .activate-btn button:focus{
+    background-color: var(--card-primary);
+    color: white;
+}
+.footer-item{
+    display: flex;
+    justify-content: space-between;
+}
+.main-card-footer p{
+    color: var(--card-secondary);
+    font-size: 14px;
+}
+.withdraw-content{
+    display: none;
+}
+.footer{
+    margin-top: 50px;
+}
+.footer p{
+    color: #66717E;
+    font-size: 14px;
+}
+.powered{
+    display: flex;
+    justify-content: center;
+}
+.powered p{
+    color: #66717E;
+    font-size: 20px;
+}
+#max {
+    cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#Genesis{
+    display: block;
+}
+#Pluto-Bitcoin{
+    display: none;
+}
+
+#USDN-Bitcoin{
+    display: none;
+}
+
+#TCI-Program{
+    display: none;
+}
+
+.tci-side-menu a {
+    color: #22133F;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+}
+
+div .tci-token {
+    height: 40px;
+    width: 200px;
+    margin-left: 120px;
+
+}
+
+div .tci-list {
+    height: 40px;
+    width: 200px;
+    margin-left: 120px;
+
+}
+
+
+
+select {
+    font-family: var(--logo-2-font) !important;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 12px;
+    height: 42px;
+    width: 150px;
+}
+
+.lp-logo {
+    padding-right: 20px;
+}

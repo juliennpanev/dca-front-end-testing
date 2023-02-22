@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <title>NextWeek App</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="navbar-logo">
+                <img src="./assets/images/Logo.png" alt="logo" class="logo" id="logo-img"><span id="logo-text">The
+                    Heraclitus Project</span>
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!--------------- header buttons start ---------------->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link nav-menu nav-active" href="#" role="button" id="nav-Genesis">
+                            Genesis
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-menu " href="#" role="button" id="nav-Pluto-Bitcoin">
+                            Pluto-Bitcoin
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-menu" href="#" role="button" id="TCI">
+                            TCI
+                        </a>
+                    </li>
+                </ul>
+                <!--------------- header buttons end ---------------->
+
+
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link me-lg-4 pe-lg-4" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="nav-link">
+                            Info
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end" id="dropdown-menu">
+                            <li class="pb-1">
+                                <a href="#" id="telegram">Telegram</a>
+                            </li>
+                            <li class="pb-1"><a href="#" id="twitter">Twitter</a></li>
+                            <li class="pb-1"><a href="#" id="medium">Medium</a></li>
+                            <li class="pb-1"><a href="#" id="docs">Docs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#" class="text-decortion-none" id="connect-button"><button class="btn connect px-3">Connect
+                        Wallet</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!--------------- Genesis Page start ---------------->
+    <section class="content" id="Genesis">
+        <div class="row ">
+            <div class="col-lg-4 mt-5">
+                <div class="left-box ms-lg-auto mx-auto mx-lg-0" name="info-window">
+                    <p class="m-0" id="first-text">
+                        <b> Genesis_DCA </b>is an automated, tokenized
+                        Dollar-cost Averiging smart contract on Waves
+                        Blockchain.
+                    </p>
+                    <p class="m-0 mt-1" id="medium-text">
+                        <b>PLUTO</b> token is used as a Base Capital.
+                        In the upcoming round dapp will DCA from
+                        compounded interest to <b>WAVES</b> token.
+                        All accumulated funds are going to be mass-
+                        transfered on the end of the round.
+                    </p>
+                    <p class="m-0 mt-1" id="last-text">
+                        Read more on our <b>Telegram</b> and <b>Medium </b>.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-4 col-xxl-4 col-11 col-sm-8 col-md-7 mx-auto">
+                <div class="main-card">
+                    <i class="bi bi-info-circle text-white"></i>
+                    <div class="genesis-logo" id="genesis-logo">
+                        <img src="./assets/images/Layer 51.png" alt="" id="genesis-img">
+                        <h2 class="m-0" id="genesis-logo-text">Genesis DCA</h2>
+                    </div>
+                    <div class="main-card-content">
+                        <div class="d-flex links">
+                            <a class="col-3 link-item" id="deposit">
+                                <p class="m-0" id="Deposit-link"> Deposit </p>
+                            </a>
+                            <a class="col-3 link-item" id="withdraw">
+                                <p class="m-0" id="withdraw-link"> Withdraw </p>
+                            </a>
+                        </div>
+                        <div class="deposit-content">
+                            <div class="item">
+                                <div class="d-flex w-100">
+                                    <div class="pe-2">
+                                        <img src="./assets/images/background_2.png" alt="" id="deposit-item-img">
+                                    </div>
+                                    <div>
+                                        <h4 class="m-0 fw-semibold" id="pluto">Pluto</h4>
+                                        <p class="m-0" id="deposit-amount"></p>
+                                    </div>
+                                    <div class="price ms-auto">
+                                        <span class="max m-0" id="max">
+                                            MAX
+                                        </span>
+                                        <input type="number"
+                                            class="form-control shadow-none border-0 text-center fw-bold"
+                                            placeholder="1" value="1" id="deposit-price">
+                                        <span class="m-0" id="price-max-amount">
+                                            ~$0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activate-btn">
+                                <button class="btn" id="deposit-btn">Accumulate WAVES</button>
+                            </div>
+                        </div>
+                        <div class="withdraw-content">
+                            <div class="item">
+                                <div class="d-flex w-100">
+                                    <div class="pe-2">
+                                        <img src="./assets/images/Layer 51.png" alt="" id="withdraw-item-img">
+                                    </div>
+                                    <div>
+                                        <h4 class="m-0 fw-semibold" id="genesis-text">Genesis</h4>
+                                        <p class="m-0" id="withdraw-amount">0</p>
+                                    </div>
+                                    <div class="price ms-auto">
+                                        <span class="max m-0" id="withdraw-max">
+                                            MAX
+                                        </span>
+                                        <input type="number"
+                                            class="form-control shadow-none border-0 text-center fw-bold" value="1"
+                                            placeholder="1" id="genesis-withdraw-price">
+                                        <span class="m-0" id="withdraw-max-amount">
+                                            ~$0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activate-btn">
+                                <button class="btn" id="genesis-withdraw-btn">Withdraw PLUTO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-card-footer">
+                        <div class="footer-item">
+                            <p class="m-0 fw-semibold" id="deposit-window">Deposit window:</p>
+                            <p class="m-0 fw-semibold" id="time">~1d 12h 32m</p>
+                        </div>
+                        <div class="footer-item mt-2">
+                            <p class="m-0" id="number-of-persons">Number of participants:</p>
+                            <p class="m-0" id="total-persons">9</p>
+                        </div>
+                        <div class="footer-item">
+                            <p class="m-0" id="upcoming-round">Base capital for the upcoming round:</p>
+                            <p class="m-0" id="upcoming-round-total">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-4"></div>
+        </div>
+    </section>
+    <!--------------- Genesis Page end ---------------->
+
+
+    <!--------------- Pluto-Bitcoin Page start ---------------->
+    <section class="content" id="Pluto-Bitcoin">
+        <div class="row ">
+            <div class="col-lg-4 mt-5">
+                <div class="left-box ms-lg-auto mx-auto mx-lg-0" name="info-window">
+                    <p class="m-0" id="first-text">
+                        <b>Pluto-Bitcoin DCA</b> is an automated, tokenized
+                        Dollar-cost Averiging smart contract on Waves
+                        Blockchain. It works slightly different than the
+                        Genesis DCA dapp. The main difference is that
+                        it's NOT based on the rounds. You can deposit
+                        and withdraw without term limits and the
+                        accumulated funds from DCA are available to
+                        manually claim.
+                    </p>
+                    <p class="m-0 mt-1" id="medium-text">
+                        <b>PLUTO</b> token is used as a Base Capital. Dapp
+                        will DCA only from compounded interest to
+                        Bitcoin. All accumulated funds are available to
+                        manually claim. There are no term lock and no
+                        rounds.
+
+                    </p>
+                    <p class="m-0 mt-1" id="last-text">
+                        Read more on our <b>Telegram</b> and <b>Medium</b>.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-4 col-xxl-4 col-11 col-sm-8 col-md-7 mx-auto">
+                <div class="main-card">
+                    <i class="bi bi-info-circle text-white"></i>
+                    <div class="genesis-logo" id="genesis-logo">
+                        <img src="./assets/images/Layer 51.png" alt="" id="genesis-img">
+                        <h2 class="m-0" id="genesis-logo-text">Pluto-Bitcoin DCA</h2>
+                    </div>
+                    <div class="main-card-content">
+                        <div class="d-flex links">
+                            <a class="col-3 link-items" id="pluto-deposit">
+                                <p class="m-0" id="pluto-deposit"> Deposit </p>
+                            </a>
+                            <a class="col-3 link-items" id="pluto-withdraw">
+                                <p class="m-0" id="pluto-withdraw"> Withdraw </p>
+                            </a>
+                            <a class="col-3 link-items" id="pluto-claim">
+                                <p class="m-0" id="pluto-claim"> Claim </p>
+                            </a>
+                        </div>
+                        <div class="pluto-deposit-content">
+                            <div class="item">
+                                <div class="d-flex w-100">
+                                    <div class="pe-2">
+                                        <img src="./assets/images/background_2.png" alt="" id="deposit-item-img">
+                                    </div>
+                                    <div>
+                                        <h4 class="m-0 fw-semibold" id="pluto">Pluto</h4>
+                                        <p class="m-0" id="pl-btc-deposit-amount">0</p>
+                                    </div>
+                                    <div class="price ms-auto">
+                                        <span class="max m-0" id="pl-btc-deposit-max">
+                                            MAX
+                                        </span>
+                                        <input type="number"
+                                            class="form-control shadow-none border-0 text-center fw-bold"
+                                            placeholder="1" value="1" id="pl-btc-deposit-price">
+                                        <span class="m-0" id="price-max-amount">
+                                            ~$0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activate-btn">
+                                <button class="btn" id="pluto-btc-deposit-btn">Accumulate BTC</button>
+                            </div>
+                        </div>
+                        <div class="pluto-withdraw-content">
+                            <div class="item">
+                                <div class="d-flex w-100">
+                                    <div class="pe-2">
+                                        <img src="./assets/images/background_2.png" alt="" id="withdraw-item-img">
+                                    </div>
+                                    <div>
+                                        <h4 class="m-0 fw-semibold" id="genesis-text">Pluto</h4>
+                                        <p class="m-0" id="pluto-btc-withdraw-amount"></p>
+                                    </div>
+                                    <div class="price ms-auto">
+                                        <span class="max m-0" id="pl-btc-withdraw-max">
+                                            MAX
+                                        </span>
+                                        <input type="number"
+                                            class="form-control shadow-none border-0 text-center fw-bold" value="1"
+                                            placeholder="1" id="pl-btc-withdraw-price">
+                                        <span class="m-0" id="withdraw-max-amount">
+                                            ~$0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activate-btn">
+                                <button class="btn" id="pluto-btc-withdraw-btn">Withdraw PLUTO</button>
+                            </div>
+                        </div>
+                        <div class="pluto-claim-content">
+                            <div class="item">
+                                <div class="d-flex w-100">
+                                    <div class="pe-2">
+                                        <img src="./assets/images/btc.svg" alt="" id="withdraw-item-img">
+                                    </div>
+                                    <div>
+                                        <h4 class="m-0 fw-semibold" id="genesis-text">BITCOIN (sats)
+                                        </h4>
+                                        <p class="m-0" id="pl-btc-claim-amount">0 sats</p>
+                                    </div>
+                                    <div class="price ms-auto">
+                                        <span class="max m-0" id="pl-btc-claim-max">
+                                            MAX
+                                        </span>
+                                        <input type="number"
+                                            class="form-control shadow-none border-0 text-center fw-bold" value="1"
+                                            placeholder="1" id="pl-btc-claim-input">
+                                        <span class="m-0" id="withdraw-max-amount">
+                                            ~$0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activate-btn">
+                                <button class="btn" id="pluto-btc-claim-btn">Claim BTC</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-card-footer">
+                        <div class="footer-item">
+                            <br>
+                            <!-- <p class="m-0 fw-semibold" id="deposit-window">Deposit window:</p>
+                            <p class="m-0 fw-semibold" id="time">~1d 12h 32m</p> -->
+                        </div>
+                        <div class="footer-item mt-2">
+                            <p class="m-0" id="number-of-persons">Number of participants:</p>
+                            <p class="m-0" id="total-persons">0</p>
+                        </div>
+                        <div class="footer-item">
+                            <p class="m-0" id="upcoming-round">Accumulated base capital:</p>
+                            <p class="m-0" id="upcoming-round-total">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-4"></div>
+        </div>
+    </section>
+    <!--------------- Pluto-Bitcoin Page end ---------------->
+
+
+
+
+
+    <!--------------------TCI-------------->
+
+    <section class="content" id="TCI-Program">
+        <div class="row ">
+            <div class="col-lg-4 mt-5">
+                <div class="left-box ms-lg-auto mx-auto mx-lg-0" name="info-window">
+                    <p class="m-0" id="first-text">
+                        <b>TCI Program</b>
+                    </p>
+                    <p class="m-0 mt-1" id="medium-text">
+                        The <b>WX LP</b> token is utilized as a Base Capital,
+                        which automatically allocates 1% of the capital to
+                        Bitcoin at regular intrervals. Funds can be claimed manually
+                        at any time. There are no term locks or rounds involved.
+                    </p>
+                    <p class="m-0 mt-1" id="last-text">
+                        Read more on our <b>Telegram</b> and <b>Medium</b>.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-4 col-xxl-4 col-11 col-sm-8 col-md-7 mx-auto">
+                <div class="main-card">
+                    <i class="bi bi-info-circle text-white"></i>
+                    <div class="genesis-logo" id="genesis-logo">
+                        <img src="./assets/images/Layer 51.png" alt="" id="genesis-img">
+                        <h2 class="m-0" id="genesis-logo-text">Heraclitus TCI Program</h2>
+                    </div>
+                    <div class="main-card-content">
+                        <div class="d-flex links">
+                            <a class="col-3 link-itemss" id="wxLP-deposit">
+                                <p class="m-0" id="lp-deposit-link"> Deposit </p>
+                            </a>
+                            <a class="col-3 link-itemss" id="wxLP-withdraw">
+                                <p class="m-0" id="lp-withdraw-link"> Withdraw </p>
+                            </a>
+
+                        </div>
+                        <div class="lp-deposit-content">
+                            <div class="item">
+                                <div class="d-flex w-100">
+                                    <span>
+                                        <div class="lp-logo">
+                                            <img src="./assets/images/Layer 51.png" alt="">
+
+                                        </div>
+                                    </span>
+
+                                    <select class="selectpicker show-tick" data-live-search="true">
+                                        <div>
+                                            <img src="./assets/images/Layer 51.png" alt="">
+                                            <option data-subtext="token">WXUSDN LP</option>
+                                        </div>
+                                        <option data-tokens="mustard">USDTUSDN LP</option>
+                                        <option data-tokens="frosting">USDCUSDN LP</option>
+                                        <option data-tokens="frosting">USDTUSDC LP</option>
+                                        <option data-tokens="frosting">PUZZLEUSDN LP</option>
+                                    </select>
+
+                                    <div class="price ms-auto">
+                                        <span class="max m-0" id="max">
+                                            MAX
+                                        </span>
+                                        <input type="number"
+                                            class="form-control shadow-none border-0 text-center fw-bold"
+                                            placeholder="1" value="1" id="deposit-price">
+                                        <span class="m-0" id="price-max-amount">
+                                            ~$0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activate-btn">
+                                <button class="btn" id="deposit-btn">Deposit LP token</button>
+                            </div>
+                        </div>
+                        <div class="lp-withdraw-content">
+                            <div class="item">
+                                <div class="d-flex w-100">
+                                    <div class="pe-2">
+                                        <img src="./assets/images/Layer 51.png" alt="" id="withdraw-item-img">
+                                    </div>
+                                    <div>
+                                        <h4 class="m-0 fw-semibold" id="genesis-text">WX TCI</h4>
+                                        <p class="m-0" id="usdn-btc-withdraw-amount">0</p>
+                                    </div>
+                                    <div class="price ms-auto">
+                                        <span class="max m-0" id="withdraw-max">
+                                            MAX
+                                        </span>
+                                        <input type="number"
+                                            class="form-control shadow-none border-0 text-center fw-bold" value="1"
+                                            placeholder="1" id="withdraw-price">
+                                        <span class="m-0" id="withdraw-max-amount">
+                                            ~$0
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="activate-btn">
+                                <button class="btn" id="withdraw-btn">Withdraw LP tokens</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="main-card-footer">
+                        <div class="footer-item">
+                            <br>
+                            <!-- <p class="m-0 fw-semibold" id="deposit-window">Deposit window:</p>
+                            <p class="m-0 fw-semibold" id="time">~1d 12h 32m</p> -->
+                        </div>
+                        <div class="footer-item mt-2">
+                            <p class="m-0" id="number-of-persons">Number of participants:</p>
+                            <p class="m-0" id="total-persons">0</p>
+                        </div>
+                        <div class="footer-item">
+                            <p class="m-0" id="upcoming-round">Accumulated base capital:</p>
+                            <p class="m-0" id="upcoming-round-total">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-4 tci-deposit-side-menu tci-side-menu"></div>
+            <div class="col-lg-3 col-xl-4 tci-withdraw-side-menu tci-side-menu"></div>
+        </div>
+    </section>
+
+
+    <!---------TCI-->
+
+    <section class="footer">
+        <div class="powered" id="powered-by">
+            <p class="m-0" id="powered-by-text">Powered by the</p><img id="waves-img" src="./assets/images/waves.svg"
+                alt="">
+        </div>
+        <p class="m-0 mt-5 text-center" id="footer-text">© 2022 | The Heraclitus Project</p>
+    </section>
+</body>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+
+
+
+
+
+
+<!-- For Genesis -->
+<script>
+    $("#nav-Genesis").click(function () {
+        $("#Genesis").css({ 'display': 'block' });
+        $("#Pluto-Bitcoin").css({ 'display': 'none' });
+        $("#USDN-Bitcoin").css({ 'display': 'none' });
+        $("#TCI-Program").css({ 'display': 'none' })
+    })
+    $(document).ready(function () {
+        activeControl();
+        $("#deposit").trigger('click');
+    });
+    function activeControl() {
+
+        $(".link-item").click(function () {
+            $(".link-item.active").removeClass("active");
+            $(this).addClass("active");
+        });
+        $(".nav-menu").click(function () {
+            $(".nav-menu.nav-active").removeClass("nav-active");
+            $(this).addClass("nav-active");
+        });
+        $("#deposit").click(function () {
+            $(".deposit-content").css({ 'display': 'block' });
+            $(".withdraw-content").css({ 'display': 'none' })
+        })
+        $("#withdraw").click(function () {
+            $(".deposit-content").css({ 'display': 'none' });
+            $(".withdraw-content").css({ 'display': 'block' })
+        })
+    }
+</script>
+
+
+<!--For  Pluto-Bitcoin -->
+<script>
+    $("#nav-Pluto-Bitcoin").click(function () {
+        $("#Genesis").css({ 'display': 'none' });
+        $("#Pluto-Bitcoin").css({ 'display': 'block' });
+        $("#USDN-Bitcoin").css({ 'display': 'none' });
+        $("#TCI-Program").css({ 'display': 'none' })
+    })
+    $(document).ready(function () {
+        activeControll();
+        $("#pluto-deposit").trigger('click');
+    });
+    function activeControll() {
+        $(".link-items").click(function () {
+            $(".link-items.actives").removeClass("actives");
+            $(this).addClass("actives");
+        });
+        $("#pluto-deposit").click(function () {
+            $(".pluto-deposit-content").css({ 'display': 'block' });
+            $(".pluto-withdraw-content").css({ 'display': 'none' })
+            $(".pluto-claim-content").css({ 'display': 'none' })
+
+        })
+        $("#pluto-withdraw").click(function () {
+            $(".pluto-deposit-content").css({ 'display': 'none' });
+            $(".pluto-withdraw-content").css({ 'display': 'block' })
+            $(".pluto-claim-content").css({ 'display': 'none' })
+        })
+        $("#pluto-claim").click(function () {
+            $(".pluto-deposit-content").css({ 'display': 'none' });
+            $(".pluto-withdraw-content").css({ 'display': 'none' })
+            $(".pluto-claim-content").css({ 'display': 'block' })
+        })
+    }
+</script>
+
+
+
+
+<script>
+    $("#TCI").click(function () {
+        $("#Genesis").css({ 'display': 'none' });
+        $("#Pluto-Bitcoin").css({ 'display': 'none' });
+        $("#USDN-Bitcoin").css({ 'display': 'none' });
+        $("#TCI-Program").css({ 'display': 'block' })
+        $(".tci-withdraw-side-menu").css({ 'display': 'none' })
+    })
+    $(document).ready(function () {
+        activeControlll();
+        $("#wxLP-deposit").trigger('click');
+    });
+    function activeControlll() {
+        $(".link-itemss").click(function () {
+            $(".link-itemss.activess").removeClass("activess");
+            $(this).addClass("activess");
+        });
+        $("#wxLP-deposit").click(function () {
+            $(".lp-deposit-content").css({ 'display': 'block' });
+            $(".lp-withdraw-content").css({ 'display': 'none' });
+            $(".tci-deposit-side-menu").css({ 'display': 'block' });
+            $(".tci-withdraw-side-menu").css({ 'display': 'none' })
+
+
+        })
+        $("#wxLP-withdraw").click(function () {
+            $(".lp-deposit-content").css({ 'display': 'none' });
+            $(".lp-withdraw-content").css({ 'display': 'block' });
+            $(".tci-deposit-side-menu").css({ 'display': 'none' });
+            $(".tci-withdraw-side-menu").css({ 'display': 'block' })
+
+        })
+    }
+</script>
+
+
+<script src="./App.js" type="module"></script>
+
+</html>

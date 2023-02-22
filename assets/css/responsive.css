@@ -1,0 +1,85 @@
+@media (max-width: 575.98px) {
+  .nav-link{
+    border-right: none !important;
+   }
+   .navbar-brand img{
+    width: 20px !important;
+   }
+   .navbar-brand span{
+    font-size: 14px;
+   }
+   .navbar{
+    display: flex;
+    justify-content: flex-end;
+   }
+   .dropdown-menu{
+    width: 6rem !important;
+   }
+   .main-card{
+    height: fit-content;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: auto;
+   }
+   .item{
+    padding: 0px 10px;
+   }
+   .item img{
+    width: 30px;
+    height: 30px;
+   }
+   .item p{
+    font-size: 10px;
+   }
+   .item h4{
+    font-size: 14px;
+   }
+   .max{
+    font-size: 8px !important;
+    padding: 0px 3px !important;
+   }
+   .price{
+    width: 60% !important;
+    width: fit-content;
+    padding: 5px;
+   }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav-link{
+    border-right: none !important;
+   }
+   .left-box{
+    width: 60%;
+   }
+   .main-card{
+    margin-top: 30px;
+   }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav-link{
+    padding-right: 20px !important;
+  }
+  .navbar button.connect{
+    margin-left: 20px;
+  }
+  .dropdown-menu-end[data-bs-popper]{
+    right: 30px !important;
+}
+.left-box{
+  width: 50%;
+}
+.main-card{
+  margin-top: 30px;
+}
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .main-card{
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  
+}
+@media (min-width: 1400px) {
+ 
+}
