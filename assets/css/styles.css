@@ -310,17 +310,25 @@ div .tci-list {
 
 }
 
-
-
 select {
     font-family: var(--logo-2-font) !important;
     text-align: center;
     border: 1px solid;
     border-radius: 12px;
-    height: 42px;
+    height: 40px;
     width: 150px;
 }
 
 .lp-logo {
     padding-right: 20px;
+}
+
+.tci-logo {
+    padding-right: 20px;
+}
+
+.tci-program img {
+    width: 40px;
+    height: 40px;
+   
 }
