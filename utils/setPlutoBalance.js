@@ -1,5 +1,5 @@
 const maxButton = document.getElementById('max')
-const userBalance = document.getElementById('deposit-amount');
+const userBalance = document.getElementById('genesis-deposit-amount');
 
 
 function setMaxDeposit (element) {

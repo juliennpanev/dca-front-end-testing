@@ -124,7 +124,7 @@
                                     </div>
                                     <div>
                                         <h4 class="m-0 fw-semibold" id="pluto">Pluto</h4>
-                                        <p class="m-0" id="deposit-amount"></p>
+                                        <p class="m-0" id="genesis-deposit-amount">0</p>
                                     </div>
                                     <div class="price ms-auto">
                                         <span class="max m-0" id="max">
@@ -390,19 +390,19 @@
                             <div class="item">
                                 <div class="d-flex w-100">
                                     <div class="lp-logo tci-program">
-                                        <img src="./assets/images/wxWXUSDN_TCI.svg" alt="">
+                                        <img src="./assets/images/F2AKkA513k5yHEJkLsU6vWxCYYk811GpjLhwEv2WGwZ9.svg" alt="" id="lp-deposit-logo">
 
                                     </div>
-                                    <select class="selectpicker show-tick" data-live-search="true">
-                                        <option data-tokens="mustard">WXUSDN LP</option>
-                                        <option data-tokens="mustard">USDTUSDN LP</option>
-                                        <option data-tokens="frosting">USDCUSDN LP</option>
-                                        <option data-tokens="frosting">USDTUSDC LP</option>
-                                        <option data-tokens="frosting">PUZZLEUSDN LP</option>
+                                    <select class="selectpicker show-tick" data-live-search="true" id="lp-list">
+                                        <option value="F2AKkA513k5yHEJkLsU6vWxCYYk811GpjLhwEv2WGwZ9">WXXTN LP</option>
+                                        <option value="97zHFp1C3cB7qfvx8Xv5f2rWp9nUSG5UnAamfPcW6txf">USDTXTN LP</option>
+                                        <option value="EK6N7S38xbtBT3SxAqoGdDLCiX6rojX6G169CnSyuE5">USDCXTN LP</option>
+                                        <option value="EPhdEfmQaNcHyvDmRGhnLhgcJtKZ2a4k3ZBmKWtAEWyH">USDCUSDT LP</option>
+                                        <option value="E8zHu33GfcNyGLypX77gZiUXfvuZQeaYmiEfsy7VYNwP">PUZZLEXTN LP</option>
                                     </select>
 
                                     <div class="price ms-auto">
-                                        <span class="max m-0" id="max">
+                                        <span class="max m-0" id="deposit-max-tci">
                                             MAX
                                         </span>
                                         <input type="number"
@@ -422,20 +422,20 @@
                             <div class="item">
                                 <div class="d-flex w-100">
                                     <div class="tci-logo tci-program" >
-                                        <img src="./assets/images/wxWXUSDN_TCI.svg" alt="">
+                                        <img src="./assets/images/FuUobp3DcfARzDLcvtVW37i7FvMPvCCpgdcvWke8sBuh.svg" alt="" id="tci-withdraw-logo">
 
                                     </div>
 
 
-                                    <select class="selectpicker show-tick" data-live-search="true">
-                                        <option data-tokens="mustard">WXUSDN TCI</option>
-                                        <option data-tokens="mustard">USDTUSDN TCI</option>
-                                        <option data-tokens="frosting">USDCUSDN TCI</option>
-                                        <option data-tokens="frosting">USDTUSDC TCI</option>
-                                        <option data-tokens="frosting">PUZZLEUSDN TCI</option>
+                                    <select class="selectpicker show-tick" data-live-search="true" id="tci-list">
+                                        <option value="FuUobp3DcfARzDLcvtVW37i7FvMPvCCpgdcvWke8sBuh">WXUSDN TCI</option>
+                                        <option value="2CD44HANZzsdU7yqRsmz7L9eA2Foh4YYMC4azMbaZEj6">USDTXTN TCI</option>
+                                        <option value="HZKFpNfyPG5gt4D6Nfy1zQSg2Ptmqv932GjNTCyBEeKP">USDCXTN TCI</option>
+                                        <option value="BqPYkaiz7Le6fFu1rjZ54anrpT57EpvyugZCUqrsjXj">USDCUSDT TCI</option>
+                                        <option value="Dh9QXSSABE5V6aRfu3mCbDAUokbpE7ER7pbZV6cvyg1A">PUZZLEXTN TCI</option>
                                     </select>
                                     <div class="price ms-auto">
-                                        <span class="max m-0" id="withdraw-max">
+                                        <span class="max m-0" id="withdraw-max-tci">
                                             MAX
                                         </span>
                                         <input type="number"

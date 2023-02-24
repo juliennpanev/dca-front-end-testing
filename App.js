@@ -12,8 +12,7 @@ import setMaxDeposit from "./utils/setPlutoBalance.js"
 import {loadDepositViewAndData} from "./views/plutoBtcDepositView.js"
 import loadWithdrawView from "./views/plutoBtcWithdrawView.js"
 import loadClaimView from "./views/plutoBtcClaimView.js"
-import activatePlutoBtcInvokes from "./plutoBTC/activateInvokesPlutoBtc.js"
-
+import manageTCI from "./tci/tciHandler.js"
 
 
 
@@ -40,4 +39,4 @@ withdraw.setMaxWithdraw();
 loadDepositViewAndData();
 loadWithdrawView();
 loadClaimView();
-activatePlutoBtcInvokes();
+manageTCI();

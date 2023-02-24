@@ -1,6 +1,6 @@
-async function getBalance(address) {
+async function getBalance(address, id) {
     try {
-        const res = await fetch('https://nodes.wavesnodes.com/assets/balance/' + address + '/' + 'Ajso6nTTjptu2UHLx6hfSXVtHFtRBJCkKYd5SAyj7zf5')
+        const res = await fetch('https://nodes.wavesnodes.com/assets/balance/' + address + '/' + id)
         const balanceData = await res.json();
         return balanceData;
     } catch (e) {
@@ -8,4 +8,4 @@ async function getBalance(address) {
     }
 }
 
-export default getBalance;
+export default getBalance;  

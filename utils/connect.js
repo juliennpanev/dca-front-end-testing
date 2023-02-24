@@ -36,7 +36,7 @@ function init () { connectButton.addEventListener('click', async (e) => {
         if (state.initialized) {
             btnField.textContent = "Wallet Connected"
             
-            getBalance(state.account['address']);
+            getBalance(state.account['address'], 'Ajso6nTTjptu2UHLx6hfSXVtHFtRBJCkKYd5SAyj7zf5');
             setBaseAssetBalance(state.account['address']);
             setPlutoBalance();
         } else {
