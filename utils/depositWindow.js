@@ -16,8 +16,8 @@ async function calculateDepositWindow () {
             depositPeriodElement.textContent = `Open untill block ${keyValue['value']}`
         }
     
-    } catch {
-        window.alert("Couldn't read data from DCA dApp");
+    } catch (e){
+        console.log('depositWindow.js ERROR')
     }
 }
    

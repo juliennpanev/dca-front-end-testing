@@ -5,7 +5,7 @@ import connect from './utils/connect.js'
 import getStakedCapital from "./utils/calcBaseCapital.js"
 import getDcaHolders from "./utils/getDcaHolders.js"
 import depositWindow from "./utils/depositWindow.js"
-import invoke from "./utils/ivoke.js"
+import invoke from "./utils/invoke.js"
 import withdraw from './utils/withdraw.js'
 import setBaseAssetBalance from "./utils/setPlutoBalance.js"
 import setMaxDeposit from "./utils/setPlutoBalance.js"

@@ -132,7 +132,7 @@
                                         </span>
                                         <input type="number"
                                             class="form-control shadow-none border-0 text-center fw-bold"
-                                            placeholder="1" value="1" id="deposit-price">
+                                            placeholder="0" value="0" id="deposit-price">
                                         <span class="m-0" id="price-max-amount">
                                             ~$0
                                         </span>
@@ -158,8 +158,8 @@
                                             MAX
                                         </span>
                                         <input type="number"
-                                            class="form-control shadow-none border-0 text-center fw-bold" value="1"
-                                            placeholder="1" id="genesis-withdraw-price">
+                                            class="form-control shadow-none border-0 text-center fw-bold" value="0"
+                                            placeholder="0" id="genesis-withdraw-price">
                                         <span class="m-0" id="withdraw-max-amount">
                                             ~$0
                                         </span>
@@ -256,7 +256,7 @@
                                         </span>
                                         <input type="number"
                                             class="form-control shadow-none border-0 text-center fw-bold"
-                                            placeholder="1" value="1" id="pl-btc-deposit-price">
+                                            placeholder="0" value="0" id="pl-btc-deposit-price">
                                         <span class="m-0" id="price-max-amount">
                                             ~$0
                                         </span>
@@ -282,8 +282,8 @@
                                             MAX
                                         </span>
                                         <input type="number"
-                                            class="form-control shadow-none border-0 text-center fw-bold" value="1"
-                                            placeholder="1" id="pl-btc-withdraw-price">
+                                            class="form-control shadow-none border-0 text-center fw-bold" value="0"
+                                            placeholder="0" id="pl-btc-withdraw-price">
                                         <span class="m-0" id="withdraw-max-amount">
                                             ~$0
                                         </span>
@@ -310,8 +310,8 @@
                                             MAX
                                         </span>
                                         <input type="number"
-                                            class="form-control shadow-none border-0 text-center fw-bold" value="1"
-                                            placeholder="1" id="pl-btc-claim-input">
+                                            class="form-control shadow-none border-0 text-center fw-bold" value="0"
+                                            placeholder="0" id="pl-btc-claim-input">
                                         <span class="m-0" id="withdraw-max-amount">
                                             ~$0
                                         </span>
@@ -359,10 +359,8 @@
                         <b>TCI Program</b>
                     </p>
                     <p class="m-0 mt-1" id="medium-text">
-                        The <b>WX LP</b> token is utilized as a Base Capital,
-                        which automatically allocates 1% of the capital to
-                        Bitcoin at regular intrervals. Funds can be claimed manually
-                        at any time. There are no term locks or rounds involved.
+                        Tokenized Compound Interest (TCI) is a collection of tokenized derivatives developed as part of
+                        the Heraclitus Project, an initiative centered around the Waves Blockchain.
                     </p>
                     <p class="m-0 mt-1" id="last-text">
                         Read more on our <b>Telegram</b> and <b>Medium</b>.
@@ -390,15 +388,18 @@
                             <div class="item">
                                 <div class="d-flex w-100">
                                     <div class="lp-logo tci-program">
-                                        <img src="./assets/images/F2AKkA513k5yHEJkLsU6vWxCYYk811GpjLhwEv2WGwZ9.svg" alt="" id="lp-deposit-logo">
+                                        <img src="./assets/images/F2AKkA513k5yHEJkLsU6vWxCYYk811GpjLhwEv2WGwZ9.svg"
+                                            alt="" id="lp-deposit-logo">
 
                                     </div>
                                     <select class="selectpicker show-tick" data-live-search="true" id="lp-list">
                                         <option value="F2AKkA513k5yHEJkLsU6vWxCYYk811GpjLhwEv2WGwZ9">WXXTN LP</option>
                                         <option value="97zHFp1C3cB7qfvx8Xv5f2rWp9nUSG5UnAamfPcW6txf">USDTXTN LP</option>
                                         <option value="EK6N7S38xbtBT3SxAqoGdDLCiX6rojX6G169CnSyuE5">USDCXTN LP</option>
-                                        <option value="EPhdEfmQaNcHyvDmRGhnLhgcJtKZ2a4k3ZBmKWtAEWyH">USDCUSDT LP</option>
-                                        <option value="E8zHu33GfcNyGLypX77gZiUXfvuZQeaYmiEfsy7VYNwP">PUZZLEXTN LP</option>
+                                        <option value="EPhdEfmQaNcHyvDmRGhnLhgcJtKZ2a4k3ZBmKWtAEWyH">USDCUSDT LP
+                                        </option>
+                                        <option value="E8zHu33GfcNyGLypX77gZiUXfvuZQeaYmiEfsy7VYNwP">PUZZLEXTN LP
+                                        </option>
                                     </select>
 
                                     <div class="price ms-auto">
@@ -407,7 +408,7 @@
                                         </span>
                                         <input type="number"
                                             class="form-control shadow-none border-0 text-center fw-bold"
-                                            placeholder="1" value="1" id="deposit-price">
+                                            placeholder="0" value="0" id="deposit-price">
                                         <span class="m-0" id="price-max-amount">
                                             ~$0
                                         </span>
@@ -421,26 +422,31 @@
                         <div class="lp-withdraw-content">
                             <div class="item">
                                 <div class="d-flex w-100">
-                                    <div class="tci-logo tci-program" >
-                                        <img src="./assets/images/FuUobp3DcfARzDLcvtVW37i7FvMPvCCpgdcvWke8sBuh.svg" alt="" id="tci-withdraw-logo">
+                                    <div class="tci-logo tci-program">
+                                        <img src="./assets/images/FuUobp3DcfARzDLcvtVW37i7FvMPvCCpgdcvWke8sBuh.svg"
+                                            alt="" id="tci-withdraw-logo">
 
                                     </div>
 
 
                                     <select class="selectpicker show-tick" data-live-search="true" id="tci-list">
                                         <option value="FuUobp3DcfARzDLcvtVW37i7FvMPvCCpgdcvWke8sBuh">WXUSDN TCI</option>
-                                        <option value="2CD44HANZzsdU7yqRsmz7L9eA2Foh4YYMC4azMbaZEj6">USDTXTN TCI</option>
-                                        <option value="HZKFpNfyPG5gt4D6Nfy1zQSg2Ptmqv932GjNTCyBEeKP">USDCXTN TCI</option>
-                                        <option value="BqPYkaiz7Le6fFu1rjZ54anrpT57EpvyugZCUqrsjXj">USDCUSDT TCI</option>
-                                        <option value="Dh9QXSSABE5V6aRfu3mCbDAUokbpE7ER7pbZV6cvyg1A">PUZZLEXTN TCI</option>
+                                        <option value="2CD44HANZzsdU7yqRsmz7L9eA2Foh4YYMC4azMbaZEj6">USDTXTN TCI
+                                        </option>
+                                        <option value="HZKFpNfyPG5gt4D6Nfy1zQSg2Ptmqv932GjNTCyBEeKP">USDCXTN TCI
+                                        </option>
+                                        <option value="BqPYkaiz7Le6fFu1rjZ54anrpT57EpvyugZCUqrsjXj">USDCUSDT TCI
+                                        </option>
+                                        <option value="Dh9QXSSABE5V6aRfu3mCbDAUokbpE7ER7pbZV6cvyg1A">PUZZLEXTN TCI
+                                        </option>
                                     </select>
                                     <div class="price ms-auto">
                                         <span class="max m-0" id="withdraw-max-tci">
                                             MAX
                                         </span>
                                         <input type="number"
-                                            class="form-control shadow-none border-0 text-center fw-bold" value="1"
-                                            placeholder="1" id="withdraw-price">
+                                            class="form-control shadow-none border-0 text-center fw-bold" value="0"
+                                            placeholder="0" id="withdraw-price">
                                         <span class="m-0" id="withdraw-max-amount">
                                             ~$0
                                         </span>

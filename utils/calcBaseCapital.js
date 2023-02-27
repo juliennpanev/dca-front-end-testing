@@ -5,7 +5,7 @@ async function getStakedCapital(address, element) {
         element.textContent = data.value / Math.pow(10, 8);
         return req;
     } catch(e) {
-        window.alert(e.data);
+        console.log('calcBaseCapital')
     }
 
     

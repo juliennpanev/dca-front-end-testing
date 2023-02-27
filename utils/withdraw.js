@@ -43,7 +43,7 @@ async function activateWithdrawBtn () {
             type: 16,
             data: {
                 fee: {
-                    tokens: '0.05',
+                    tokens: '0.005',
                     assetId: 'WAVES',
                 },
                 dApp: '3PAFi86jNXNmgc4Fx4RnV6aJLXcW4zn99LJ',

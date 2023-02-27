@@ -1,4 +1,4 @@
-const maxButton = document.getElementById('max')
+const maxButton = document.querySelector('.max')
 const userBalance = document.getElementById('genesis-deposit-amount');
 
 

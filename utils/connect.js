@@ -3,7 +3,7 @@ import setBaseAssetBalance from "./setPlutoBalance.js";
 
 const connectButton = document.getElementById('connect-button');
 const btnField = document.querySelector('.btn')
-const depositBalance = document.getElementById('deposit-amount')
+const depositBalance = document.getElementById('genesis-deposit-amount')
 
 let state = undefined;
 
@@ -20,11 +20,11 @@ async function setPlutoBalance () {
     try {
         let state = await KeeperWallet.publicState();
         const address = state.account['address'];
-        const pullBalance = await fetch('https://nodes.wavesnodes.com/assets/balance/' + address + '/Ajso6nTTjptu2UHLx6hfSXVtHFtRBJCkKYd5SAyj7zf5')
-        const balanceData = await pullBalance.json()
-        depositBalance.textContent = Number(parseFloat(balanceData.balance / Math.pow(10, 8)).toFixed(8));
+        const balanceData = await getBalance(address, 'Ajso6nTTjptu2UHLx6hfSXVtHFtRBJCkKYd5SAyj7zf5')
+        depositBalance.textContent = balanceData / Math.pow(10, 8);
     } catch (e){
-        window.alert(e)
+        console.log(e)
+
     }
 }
 
@@ -44,7 +44,7 @@ function init () { connectButton.addEventListener('click', async (e) => {
         }
         // testing balance call to NODE API
     } catch (e) {
-        window.alert(e);
+        console.log(e)
     }
 })
 }

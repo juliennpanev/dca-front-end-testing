@@ -22,7 +22,7 @@ async function invoke() {
             },
         })
         .then(tx => {
-            window.alert("Pluto deposit succesful!")
+            console.log(tx)
         })
         .catch(e => {
             window.alert(e.message)

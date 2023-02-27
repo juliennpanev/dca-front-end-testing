@@ -23,8 +23,8 @@ async function setBalance() {
     btcDcaDepositAmountElement.textContent = 0;
     const state = await dapp.getState();
     const address = state["account"]["address"];
-    const balanceData = await getBalance(address);
-    btcDcaDepositAmountElement.textContent = balanceData["balance"] / Math.pow(10, 8);
+    const balanceData = await getBalance(address, 'Ajso6nTTjptu2UHLx6hfSXVtHFtRBJCkKYd5SAyj7zf5');
+    btcDcaDepositAmountElement.textContent = balanceData / Math.pow(10, 8);
 }
 
 

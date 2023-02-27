@@ -18,7 +18,7 @@ function setMaxDepositAmount() {
         const address = state.account.address;
         console.log(depositSelect.value)
         const lpBalance = await getBalance(address, depositSelect.value);
-        depositInputElement.value = lpBalance.balance;
+        depositInputElement.value = lpBalance / Math.pow(10, 8);
 
     });
 
@@ -28,7 +28,7 @@ function setMaxDepositAmount() {
         const address = state.account.address;
         const tciBalance = await getBalance(address, withdrawSelect.value);
         console.log(tciBalance)
-        withdrawInputElement.value = tciBalance.balance;
+        withdrawInputElement.value = tciBalance / Math.pow(10, 8);
     });
 }
 

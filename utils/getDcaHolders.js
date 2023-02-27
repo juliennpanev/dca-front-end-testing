@@ -21,7 +21,8 @@ async function getParticipants() {
     
     }
     catch (e) {
-        window.alert(e.data)
+        console.log('getDCAHolders.js')
+        console.log(e)
     }
     
 }
