@@ -18,7 +18,11 @@ function setMaxDepositAmount() {
         const address = state.account.address;
         
         const lpBalance = await getBalance(address, depositSelect.value);
-        depositInputElement.value = lpBalance / Math.pow(10, 8);
+        if (depositSelect.value == '8wUmN9Y15f3JR4KZfE81XLXpkdgwnqoBNG6NmocZpKQx') {
+            depositInputElement.value = lpBalance / Math.pow(10, 6);
+        } else {
+            depositInputElement.value = lpBalance / Math.pow(10, 8);
+        }
 
     });
 

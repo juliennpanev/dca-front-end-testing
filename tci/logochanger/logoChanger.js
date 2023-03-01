@@ -12,6 +12,7 @@ const withdrawInput = document.querySelector('#TCI-Program #withdraw-price');
 function changeLogo() {
     depositSelect.addEventListener('click', () => {
         let lpLogo = depositSelect.value;
+        console.log(depositSelect.options)
         
         depositLogo.src = './assets/images/' + lpLogo  + '.svg'
         depositInput.value = 0;
