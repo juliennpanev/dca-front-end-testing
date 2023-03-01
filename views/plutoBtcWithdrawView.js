@@ -14,9 +14,7 @@ async function setWithdrawBalance() {
     const address = (state['account']['address']);
     let data = await dapp.getDappData(dapp.address);
     data.forEach(entry => {
-        console.log(state);
-        console.log(address);
-        console.log(entry);
+        
         if (entry['key'].includes(address + '_deposited')) {
             withdrawBalanceField.textContent = entry['value'] / Math.pow(10, 8);
         }

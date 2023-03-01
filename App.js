@@ -9,10 +9,9 @@ import invoke from "./utils/invoke.js"
 import withdraw from './utils/withdraw.js'
 import setBaseAssetBalance from "./utils/setPlutoBalance.js"
 import setMaxDeposit from "./utils/setPlutoBalance.js"
-import {loadDepositViewAndData} from "./views/plutoBtcDepositView.js"
-import loadWithdrawView from "./views/plutoBtcWithdrawView.js"
-import loadClaimView from "./views/plutoBtcClaimView.js"
+
 import manageTCI from "./tci/tciHandler.js"
+import manageBTCSection from "./plutoBTC/manageViews.js"
 
 
 
@@ -36,7 +35,5 @@ withdraw.loadWithdrawInfo();
 withdraw.activateWithdrawBtn();
 withdraw.setMaxWithdraw();
 
-loadDepositViewAndData();
-loadWithdrawView();
-loadClaimView();
+manageBTCSection();
 manageTCI();
