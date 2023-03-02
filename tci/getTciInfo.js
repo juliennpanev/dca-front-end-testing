@@ -6,7 +6,7 @@ const tokenAmountElement = document.getElementById('token-amount');
 function setTciInfo() {
     tciWithdrawElement.addEventListener('click', async () => {  
         tokenInfoElement.textContent = 'Minted TCI:';
-        const req = await fetch('http://20.7.14.174:6869/assets/details/' + selectWithdrawOptionsElement.value);
+        const req = await fetch('https://nodes.wavesnodes.com/assets/details/' + selectWithdrawOptionsElement.value);
         const data = await req.json();
         const tciIssued = data.quantity;
         const tciName = selectWithdrawOptionsElement[ selectWithdrawOptionsElement.selectedIndex ].textContent;
@@ -15,7 +15,7 @@ function setTciInfo() {
     });
 
     selectWithdrawOptionsElement.addEventListener('click', async () => {
-        const req = await fetch('http://20.7.14.174:6869/assets/details/' + selectWithdrawOptionsElement.value);
+        const req = await fetch('https://nodes.wavesnodes.com/assets/details/' + selectWithdrawOptionsElement.value);
         const data = await req.json();
         const tciIssued = data.quantity;
         const tciName = selectWithdrawOptionsElement[ selectWithdrawOptionsElement.selectedIndex ].textContent;
