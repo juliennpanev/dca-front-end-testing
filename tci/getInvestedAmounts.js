@@ -22,10 +22,14 @@ async function getInvestedAmount() {
 
         });
 
-        depositLink.addEventListener('click', () => {
-            depositInfoText.textContent = 'Invested LP:'
+        depositLink.addEventListener('click', async () => {
+            depositInfoText.textContent = 'Invested LP:';
+            const req = await fetch('http://20.7.14.174:6869/assets/balance/3PPK7G7BQf3yWQdXapuBhEhYkaqNBfcvNtk/8wUmN9Y15f3JR4KZfE81XLXpkdgwnqoBNG6NmocZpKQx');
+            const data = await req.json();
+            let balance = (data.balance / Math.pow(10, 6)).toFixed(2);
+            investedLpInfoElement.textContent = `${balance} NSBT`;
         })
     }
 }
-    
+
 export default getInvestedAmount;
